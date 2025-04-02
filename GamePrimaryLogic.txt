@@ -1,17 +1,44 @@
 Dividir em 2 processos: APÓS 1 teste completo e ANTES de 1 teste completo
 
 
+function lastTaskDone(user: User) {
+   1. ver se o usuário fez alguma task (history)
+      --> Se não fez, passa para o firstTaskGiver(user: User) -> atribuí a primeira task
+   2. se fez, pegar o UserAttributes.Score, UserAttributes.actualProcess e também:
+    (SELECT count(*) from UserHistory UH INNER JOIN Testes T ON UH.TaskId = T.ID WHERE T.ProcessType = 'tipo que queremos'), 
+    essa query vai ser basicamente a quantidade de testes feitos
+}
 
-function ConcederTask(etapa: int, lastTask, quantidadeLastTask, actualProcess):
+
+
+function pickRandomTask(user: User, process) {
+   1. Verifica as tasks que o usuário JÁ FEZ através do HistoryUserProcess
+   SELECT taskid
+   FROM Tasks
+   WHERE taskid NOT IN (
+    SELECT taskid
+    FROM UserHistory
+    WHERE userid = 'id_do_usuario'
+   )  
+   ORDER BY RANDOM()
+   LIMIT 1;
+
+   query para verificar se o usuário já fez alguma das tasks, ai ele vai pegar uma task random no meio disso
+   se o resultado dessa query for nil, então ele vai pegar uma task aleatoria e vai atribuir ao usuário
+   atribuir ao usuário = colocar o Id no UserAttributes.TaskId
+}
+
+function ConcederTask(numberTestsDone: int, lastTaskDone: LastTaskDone(task|int), score: int, actualProcess: string) Task {}:
 var divisível: int
 var quantidadeLastTask: int
 // fzr um SwitchCase para isso
-if (etapa = 0) {
+// vai basicamente verificar
+if (numberTestsDone = 0) {
    divisível = 3
-} elif (etapa = 1) {
+} elif (numberTestsDone = 1) {
    divisível = 4
-} elif (etapa = 2) {
-   divisível = 0
+} elif (numberTestsDone = 2) {
+   fmt.Print("Passou")
 } else {
    fmt.Prinf("Deu merda")
 }
@@ -22,12 +49,12 @@ ELSE:
 IF lastTask.status === true:
   IF lastTask.type === "task":
      IF quantidadeLastTask % divisivel:
-       atribuir ENIGMA
+       retornar "enigma"
      ELSE atribuir "task"
 
   IF lastTask.type === "enigma":
      IF quantidadeLastTask % divisivel:
-       atribuir TESTE
+       retornar "teste"
      ELSE atribuir "task"
 
   IF lastTask.type === "teste"
