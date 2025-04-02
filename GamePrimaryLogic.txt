@@ -1,0 +1,38 @@
+Dividir em 2 processos: APÓS 1 teste completo e ANTES de 1 teste completo
+
+
+
+function ConcederTask(etapa: int, lastTask, quantidadeLastTask, actualProcess):
+var divisível: int
+var quantidadeLastTask: int
+// fzr um SwitchCase para isso
+if (etapa = 0) {
+   divisível = 3
+} elif (etapa = 1) {
+   divisível = 4
+} elif (etapa = 2) {
+   divisível = 0
+} else {
+   fmt.Prinf("Deu merda")
+}
+
+IF quantidadeLastTasks === 0:
+   atribuir "task"
+ELSE:
+IF lastTask.status === true:
+  IF lastTask.type === "task":
+     IF quantidadeLastTask % divisivel:
+       atribuir ENIGMA
+     ELSE atribuir "task"
+
+  IF lastTask.type === "enigma":
+     IF quantidadeLastTask % divisivel:
+       atribuir TESTE
+     ELSE atribuir "task"
+
+  IF lastTask.type === "teste"
+     IF etapa === 2
+        completou processo
+     ELSE atribuir "task"
+  
+     
