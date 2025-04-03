@@ -4,18 +4,19 @@ import (
 	"miraculous/cmd/types"
 	"time"
 
-	"gorm.io/gorm"
+	"github.com/google/uuid"
+	_ "gorm.io/gorm"
 )
 
 type User struct {
-	gorm.Model
+	ID       uuid.UUID `gorm:"type:uuid;default:uuid_generate_v4();primaryKey"`
 	Username string
 	Email    string `gorm:"unique"`
 	Password string
 }
 
 type UserAttributes struct {
-	gorm.Model
+	ID            uuid.UUID `gorm:"type:uuid;default:uuid_generate_v4();primaryKey"`
 	Conscience    float64
 	Talents       float64
 	ActualProcess types.Process
@@ -24,7 +25,7 @@ type UserAttributes struct {
 }
 
 type UserHistory struct {
-	gorm.Model
+	ID            uuid.UUID `gorm:"type:uuid;default:uuid_generate_v4();primaryKey"`
 	UserId        string
 	TaskId        string
 	DataReceive   time.Time
