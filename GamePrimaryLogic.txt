@@ -62,4 +62,15 @@ IF lastTask.status === true:
         completou processo
      ELSE atribuir "task"
   
-     
+Passo a passo da lógica:
+1. Usuário faz a autenticação
+2. Usuário clica em "Começar"
+3. Usuário recebe uma Task
+--> essa task tem uma data à ser cumprida
+--> ao completar a task envia uma requisição para o servidor, que concede +1 task
+--> UI da Task varia conforme seu tipo
+
+Requisitos Funcionais:
+1. autenticação do usuário
+2. function para criação de tasks com base nos dados do usuário.
+3. persistencia dos dados do usuário
