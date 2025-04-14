@@ -1,0 +1,22 @@
+1. AuthService
+--> Register(UserRegisterPayload) error
+    /--> Add user 2 db
+
+--> Login(UserLoginPayload) (User, error)
+    /--> Verify if user exists
+    /--> Hash password
+    /--> JwtToken --> r.Context() --> Cookie
+    /--> Will add the first task to user
+
+2.  UserService
+-> AddUserAttributes
+
+3. TaskService
+obs: User will be in a Cookie
+--> GiveTask(User) error
+ /--> vai adicionar +1 task ao usuário
+ /--> pegar task aleatoria dentro do determinado process
+ /--> 
+
+obs: Vai receber a task do usuário
+--> CompleteTask(task) error

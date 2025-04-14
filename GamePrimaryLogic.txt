@@ -28,6 +28,7 @@ function pickRandomTask(user: User, process) {
    atribuir ao usuário = colocar o Id no UserAttributes.TaskId
 }
 
+Obs: All of this informations will have in UserAttributes so just pick this up
 function ConcederTask(numberTestsDone: int, lastTaskDone: LastTaskDone(task|int), score: int, actualProcess: string) Task {}:
 var divisível: int
 var quantidadeLastTask: int
@@ -74,3 +75,37 @@ Requisitos Funcionais:
 1. autenticação do usuário
 2. function para criação de tasks com base nos dados do usuário.
 3. persistencia dos dados do usuário
+
+
+UserAttributes:
+1. ID
+2. userid
+3. NumTasksCompleted
+4. NumTestsCompleted
+5. NumEnygmasCompleted
+6. Process
+7. TaskId -> task ATUAL
+8. TaskType
+
+step by step:
+Usuário vai logar
+Vai clicar em Start:
+OBS: Vai aparecer em duas instancias
+1. Primeira vez que logar
+2. Quando terminar uma Task, para pe
+
+gar outra task
+-> GetRandomTask(User)
+ /-> CASO usuário não tenha atributos, ele gera uma Task do primeiro processo
+   /-> GetFirstTask(User) -> Criar o UserAttributes 
+ /-> CASO tenha atributos, ele vai pegar o UserAttributes
+ /-> CASO o NumTestsCompleted == 0:
+      /-> CASO o TaskType seja TASK -> CASO NumTasksCompleted divisivel por 3 -> YES -> ENYGMA -> NO -> TASK
+      /-> CASO o Tasktype seja ENYGMA -> CASO NumEnygmasCompleted divisivel por 3 -> YES -> TESTE -> NO -> TASK
+ /-> CASO o NumTestsCompleted == 1:
+      /-> CASO o TaskType seja TASK -> CASO NumTasksCompleted divisivel por 4 -> YES -> ENYGMA -> NO -> TASK
+      /-> CASO o Tasktype seja ENYGMA -> CASO  NumEnygmasCompleted divisivel por 4 -> YES -> TESTE -> NO -> TASK
+ /-> CASO o NumTestesCompleted == 2:
+      /-> PASSAR PARA O PROXIMO PROCESSO
+
+o GetRandomTask(User) vai ser composto por:

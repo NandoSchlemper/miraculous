@@ -1,0 +1,13 @@
+
+
+services:
+  postgres:
+    image: postgres:17.4-alpine3.21
+    container_name: miraculous_pg_container
+    restart: always
+    environment:
+      POSTGRES_USER: miraculous
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: miraculous_db
+    ports:
+      - "5432:5432"

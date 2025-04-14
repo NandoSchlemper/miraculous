@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="Página-1" id="K9RDN214g1F_zYfi04yh">
-        <mxGraphModel dx="2634" dy="1204" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" adaptiveColors="none">
+        <mxGraphModel dx="2324" dy="963" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" adaptiveColors="none">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -474,29 +474,11 @@
                 <mxCell id="39" value="v" style="rounded=0;whiteSpace=wrap;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" parent="1" vertex="1">
                     <mxGeometry x="565" y="228" width="851" height="355" as="geometry"/>
                 </mxCell>
-                <mxCell id="263" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="41" target="45" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="267" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="41" target="266" edge="1">
+                <mxCell id="298" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="41" target="288">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="41" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;request&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="582" y="269.87" width="94" height="35.29" as="geometry"/>
-                </mxCell>
-                <mxCell id="281" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="45" target="278" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="599" y="398"/>
-                            <mxPoint x="586" y="398"/>
-                            <mxPoint x="586" y="412"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="45" value="&lt;span style=&quot;font-size: 17px;&quot;&gt;taskGiverWoker&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="574" y="362" width="122" height="29" as="geometry"/>
-                </mxCell>
-                <mxCell id="46" value="Worker" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=17;" parent="1" vertex="1">
-                    <mxGeometry x="816" y="239.87" width="172" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="55" value="Enigma" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;strokeColor=default;fontSize=16;" parent="1" vertex="1">
                     <mxGeometry x="-1078" y="-171" width="254" height="191.82002034505206" as="geometry"/>
@@ -787,35 +769,41 @@
                 <mxCell id="260" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.546;entryY=1.028;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="243" target="233" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="262" value="logMiddleware" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-                    <mxGeometry x="577" y="315" width="109" height="22.84" as="geometry"/>
-                </mxCell>
-                <mxCell id="266" value="userPayload" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="710" y="276.35" width="120" height="22.33" as="geometry"/>
-                </mxCell>
-                <mxCell id="280" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" parent="1" source="268" target="279" edge="1">
+                <mxCell id="289" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="291" target="41">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="268" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;lastTaskDone(user)&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="631" y="398" width="130" height="29" as="geometry"/>
-                </mxCell>
-                <mxCell id="269" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="631" y="435" width="130" height="29" as="geometry"/>
-                </mxCell>
-                <mxCell id="270" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="631" y="471" width="130" height="29" as="geometry"/>
-                </mxCell>
-                <mxCell id="271" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="631" y="509" width="130" height="29" as="geometry"/>
-                </mxCell>
-                <mxCell id="278" value="IF" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-                    <mxGeometry x="602" y="401" width="23" height="23" as="geometry"/>
-                </mxCell>
-                <mxCell id="284" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="279" target="269" edge="1">
+                <mxCell id="297" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="266" target="291">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="279" value="!= nil" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
-                    <mxGeometry x="792" y="401" width="74" height="24" as="geometry"/>
+                <mxCell id="266" value="user" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="749" y="339.67" width="54" height="22.33" as="geometry"/>
+                </mxCell>
+                <mxCell id="299" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="288" target="294">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="288" value="adicionar task no historico" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="574" y="318" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="291" value="taskCompleted" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="726" y="276.35" width="100" height="22.33" as="geometry"/>
+                </mxCell>
+                <mxCell id="300" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="294" target="295">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="294" value="update em LastTask (user atributes)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="574" y="362" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="302" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="295" target="301">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="295" value="adicionar uma nova task ao usuário" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="574" y="406" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="301" value="update actualTask&lt;div&gt;(user attributes)&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="574" y="446.29" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="318" value="ver o tipo da task que o usuário acabou de fazer" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="710" y="399.29" width="120" height="47" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
